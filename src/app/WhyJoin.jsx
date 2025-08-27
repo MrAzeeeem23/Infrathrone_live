@@ -29,7 +29,7 @@ function WhyJoin() {
           {values.map((item, index) => (
             <div
               key={index}
-              className="flex items-start space-x-4 bg-gradient-to-r from-orange-900/70 to-orange-700/70 rounded-xl p-6 shadow-lg hover:scale-105 transition-transform"
+              className="flex items-start space-x-4 bg-gradient-to-r from-orange-900/70 to-orange-800/70 rounded-2xl p-6 shadow-lg hover:scale-105 transition-transform"
             >
               {/* Icon */}
               <div className="relative">

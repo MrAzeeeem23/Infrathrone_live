@@ -14,9 +14,9 @@ export default function Home() {
       <div className="fixed inset-0 -z-30 opacity-30">
         <LetterGlitch
           glitchColors={["#823111", "#fa4902"]}
-          glitchSpeed={50}
-          centerVignette={true}
-          outerVignette={false}
+          glitchSpeed={40}
+          centerVignette={false}
+          outerVignette={true}
           smooth={true}
         />
       </div>

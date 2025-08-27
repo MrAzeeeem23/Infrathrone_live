@@ -16,7 +16,7 @@ function HeroSection() {
           gradientColors={["#823111", "#fa4902"]}
           angle={45}
           noise={0}
-          blindCount={20}
+          blindCount={30}
           blindMinWidth={50}
           spotlightRadius={0.8}
           spotlightSoftness={1}
@@ -27,12 +27,13 @@ function HeroSection() {
           mixBlendMode="lighten"
         />
 
-        {/* Hero Content */}
-        <div className="absolute inset-0 flex flex-col items-center justify-center px-6 sm:px-8 text-center">
+        <div className="absolute inset-0 bg-black/30 z-0"></div>
+
+        <div className="absolute inset-0 mt-10 flex flex-col items-center justify-center px-6 sm:px-8 text-center z-10">
           <div className="max-w-3xl">
-            <h1 className="text-white text-3xl sm:text-5xl md:text-6xl font-bold leading-tight drop-shadow-lg">
+            <h1 className="text-white text-3xl sm:text-5xl md:text-6xl font-bold leading-tight drop-shadow-2xl">
               Build Real-World DevOps Skills with{" "}
-              <span className="bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-yellow-300 to-white bg-clip-text text-transparent drop-shadow-[0_2px_6px_rgba(0,0,0,0.8)]">
                 InfraThrone
               </span>{" "}
               Live Projects
@@ -43,7 +44,6 @@ function HeroSection() {
             </p>
           </div>
 
-          {/* CTA Buttons */}
           <div className="mt-8 flex flex-col sm:flex-row gap-4 sm:gap-6">
             <a
               href="https://topmate.io/saurav_chaudhary_1/1697102"

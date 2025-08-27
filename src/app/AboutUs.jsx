@@ -9,30 +9,23 @@ function AboutUs() {
       id="AboutUs"
       className="relative w-full overflow-hidden py-20 sm:py-28 px-4 sm:px-6 lg:px-8"
     >
-      {/* Background Gradient Blur */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-gray-900/80 to-black/90" />
-      <div className="absolute top-20 -left-40 w-96 h-96 bg-orange-600/30 rounded-full blur-[150px]" />
-      <div className="absolute bottom-0 -right-40 w-96 h-96 bg-red-500/20 rounded-full blur-[180px]" />
 
       <div className="relative max-w-7xl mx-auto">
         {/* Heading */}
         <div className="text-center mb-16">
           <h1
-            className={`text-4xl sm:text-5xl lg:text-6xl font-extrabold bg-gradient-to-r from-orange-400 via-orange-500 to-red-500 bg-clip-text text-transparent mb-4 ${Ubuntu.className}`}
+            className={`text-4xl sm:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-white via-gray-100 to-gray-300 bg-clip-text text-transparent mb-4 ${Ubuntu.className}`}
           >
             About Us
           </h1>
-          <div className="w-28 h-1 bg-gradient-to-r from-orange-500 to-red-500 mx-auto rounded-full shadow-lg" />
+          <div className="w-24 h-1 bg-gradient-to-r from-gray-500 to-orange-500 mx-auto rounded-full"></div>
           <h2 className="text-white text-2xl sm:text-3xl md:text-4xl leading-snug mt-10 max-w-3xl mx-auto font-semibold">
             What is the{" "}
-            <span className="text-orange-400 drop-shadow-md">
-              InfraThrone
-            </span>{" "}
+            <span className="text-orange-400 drop-shadow-md">InfraThrone</span>{" "}
             Live Project?
           </h2>
         </div>
 
-        {/* Content Cards */}
         <div className="grid gap-8 max-w-5xl mx-auto text-gray-300 text-lg">
           <div className="p-6 sm:p-8 rounded-2xl bg-white/5 backdrop-blur-md border border-white/10 shadow-xl hover:shadow-2xl hover:scale-[1.02] transition-transform">
             <p>

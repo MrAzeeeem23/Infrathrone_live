@@ -14,11 +14,11 @@ function CalltoAction() {
       <div className="py-16 lg:py-24">
         <div className="text-center mb-12 sm:mb-16">
           <h1
-            className={`text-4xl sm:text-5xl lg:text-6xl font-extrabold bg-gradient-to-r from-orange-400 via-orange-500 to-red-500 bg-clip-text text-transparent mb-4 ${Ubuntu.className}`}
+            className={`text-4xl sm:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-white via-gray-100 to-gray-300 bg-clip-text text-transparent mb-4 ${Ubuntu.className}`}
           >
             Register
           </h1>
-          <div className="w-28 h-1 bg-gradient-to-r from-orange-500 to-red-500 mx-auto rounded-full shadow-md"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-gray-500 to-orange-500 mx-auto rounded-full"></div>
         </div>
 
         <div
@@ -38,14 +38,23 @@ function CalltoAction() {
             shineDirection="right"
             mixBlendMode="lighten"
           />
-          <div className="absolute inset-0 flex flex-col items-center justify-center px-4 sm:px-6 text-center">
+
+          <div className="absolute inset-0 bg-black/50 z-0"></div>
+
+          <div className="absolute inset-0 flex flex-col items-center justify-center px-4 sm:px-6 text-center z-10">
             <div className="max-w-3xl">
-              <h2 className="text-white text-[clamp(1.8rem,4vw,3rem)] font-bold leading-snug">
+              <h2 className="text-white text-[clamp(1.8rem,4vw,3rem)] font-bold leading-snug drop-shadow-2xl">
                 Ready to Level Up Your{" "}
-                <span className="text-orange-400">DevOps Career?</span>
+                <span className="bg-gradient-to-r from-yellow-300 to-white bg-clip-text text-transparent drop-shadow-[0_2px_6px_rgba(0,0,0,0.8)]">
+                  DevOps Career?
+                </span>
               </h2>
               <p className="mt-4 sm:mt-6 text-gray-200 text-base sm:text-lg md:text-xl">
-                🚀 Limited Batch Size (<span className="text-orange-400">7 max</span>) — Hurry Up!
+                🚀 Limited Batch Size (
+                <span className="bg-gradient-to-r from-yellow-300 to-white bg-clip-text text-transparent drop-shadow-[0_2px_6px_rgba(0,0,0,0.8)]">
+                  7 max
+                </span>
+                ) — Hurry Up!
               </p>
             </div>
 
@@ -62,7 +71,7 @@ function CalltoAction() {
                   text="Register Now"
                   disabled={false}
                   speed={3}
-                  className="custom-class"
+                  className="uppercase"
                 />
               </a>
             </div>
