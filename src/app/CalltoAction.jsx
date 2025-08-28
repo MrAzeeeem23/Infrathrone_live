@@ -3,7 +3,16 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Ubuntu } from "@/components/Fonts/font";
-import { Rocket, Code, Settings, GitBranch, Server, Cloud, Shield, Zap } from "lucide-react";
+import {
+  Rocket,
+  Code,
+  Settings,
+  GitBranch,
+  Server,
+  Cloud,
+  Shield,
+  Zap,
+} from "lucide-react";
 
 function CalltoAction() {
   const devopsIcons = [
@@ -17,7 +26,10 @@ function CalltoAction() {
   ];
 
   return (
-    <section className="relative w-full min-h-[100vh] flex items-center justify-center overflow-hidden " id="CalltoAction">
+    <section
+      className="relative w-full min-h-[100vh] flex items-center justify-center overflow-hidden "
+      id="CalltoAction"
+    >
       {/* Enhanced Background Elements */}
 
       <div className="absolute inset-0 opacity-[0.04] bg-[linear-gradient(to_right,#fff_1px,transparent_1px),linear-gradient(to_bottom,#fff_1px,transparent_1px)] bg-[size:80px_80px]" />
@@ -68,8 +80,13 @@ function CalltoAction() {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="text-xl sm:text-2xl text-gray-300 max-w-2xl mx-auto lg:mx-0 leading-relaxed"
           >
-            A limited-seat, hands-on program designed to help you level up quickly — 
-            <span className="text-transparent bg-gradient-to-r from-orange-400 to-red-500 bg-clip-text font-bold"> only 7 seats</span> available!
+            A limited-seat, hands-on program designed to help you level up
+            quickly —
+            <span className="text-transparent bg-gradient-to-r from-orange-400 to-red-500 bg-clip-text font-bold">
+              {" "}
+              only 7 seats
+            </span>{" "}
+            available!
           </motion.p>
 
           {/* Features List */}
@@ -81,17 +98,24 @@ function CalltoAction() {
           >
             {[
               "Real Projects",
-              "Expert Mentorship", 
+              "Expert Mentorship",
               "Small Batches",
-              "Industry Ready"
+              "Industry Ready",
             ].map((feature, index) => (
-              <div key={feature} className="flex items-center gap-2 text-gray-300">
-                <div className="w-2 h-2 bg-orange-500 rounded-full animate-pulse" style={{ animationDelay: `${index * 0.2}s` }} />
+              <div
+                key={feature}
+                className="flex items-center gap-2 text-gray-300"
+              >
+                <div
+                  className="w-2 h-2 bg-orange-500 rounded-full animate-pulse"
+                  style={{ animationDelay: `${index * 0.2}s` }}
+                />
                 <span className="text-sm font-medium">{feature}</span>
               </div>
             ))}
           </motion.div>
 
+          {/* CTA Button */}
           {/* CTA Button */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -99,26 +123,32 @@ function CalltoAction() {
             transition={{ duration: 0.8, delay: 1 }}
             className="flex flex-col sm:flex-row gap-4 items-center justify-center lg:justify-start"
           >
-            <motion.a
-              whileHover={{ scale: 1.05, boxShadow: "0 20px 40px rgba(249, 115, 22, 0.3)" }}
-              whileTap={{ scale: 0.98 }}
+            <a
               href="https://topmate.io/saurav_chaudhary_1/1697102"
               target="_blank"
-              className="relative group inline-flex items-center justify-center px-10 py-5 text-lg font-bold text-white rounded-2xl overflow-hidden bg-gradient-to-r from-orange-500 via-red-500 to-orange-600 hover:from-orange-600 hover:via-red-600 hover:to-orange-700 transition-all duration-300 shadow-lg shadow-orange-500/25"
+              rel="noopener noreferrer"
+              className="relative z-10 cursor-pointer group inline-flex items-center justify-center px-10 py-5 text-lg font-bold text-white rounded-2xl overflow-hidden bg-gradient-to-r from-orange-500 via-red-500 to-orange-600 hover:from-orange-600 hover:via-red-600 hover:to-orange-700 transition-all duration-300 shadow-lg shadow-orange-500/25"
             >
               {/* Shimmer Effect */}
               <div className="absolute inset-0 -top-40 -bottom-40 opacity-30 bg-gradient-to-r from-transparent via-white to-transparent skew-y-12 group-hover:animate-shimmer pointer-events-none" />
-              
-              <Rocket className="w-6 h-6 mr-3 animate-bounce" />
-              Register Now
+
+              {/* Content with Motion */}
               <motion.div
-                animate={{ x: [0, 5, 0] }}
-                transition={{ repeat: Infinity, duration: 1.5 }}
-                className="ml-2"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.98 }}
+                className="flex items-center"
               >
-                →
+                <Rocket className="w-6 h-6 mr-3 animate-bounce" />
+                Register Now
+                <motion.div
+                  animate={{ x: [0, 5, 0] }}
+                  transition={{ repeat: Infinity, duration: 1.5 }}
+                  className="ml-2"
+                >
+                  →
+                </motion.div>
               </motion.div>
-            </motion.a>
+            </a>
           </motion.div>
         </motion.div>
 
@@ -136,7 +166,7 @@ function CalltoAction() {
               transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
               className="absolute inset-0 rounded-full border-2 border-orange-500/30"
             />
-            
+
             <motion.div
               animate={{ rotate: -360 }}
               transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
@@ -164,21 +194,21 @@ function CalltoAction() {
                 className={`absolute ${position}`}
               >
                 <motion.div
-                  animate={{ 
+                  animate={{
                     y: [0, -20, 0],
-                    rotateY: [0, 180, 360]
+                    rotateY: [0, 180, 360],
                   }}
-                  transition={{ 
-                    duration: 3 + index * 0.5, 
+                  transition={{
+                    duration: 3 + index * 0.5,
                     repeat: Infinity,
-                    ease: "easeInOut"
+                    ease: "easeInOut",
                   }}
                   className="relative group"
                 >
                   <div className="w-16 h-16 bg-gradient-to-br from-gray-800/80 to-gray-900/80 backdrop-blur-lg border border-gray-700/50 rounded-2xl flex items-center justify-center shadow-lg group-hover:shadow-orange-500/25 transition-all duration-300">
                     <Icon className="w-8 h-8 text-orange-400 group-hover:text-orange-300 transition-colors" />
                   </div>
-                  
+
                   {/* Glow Effect */}
                   <div className="absolute inset-0 rounded-2xl bg-orange-500/20 blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </motion.div>
@@ -188,14 +218,25 @@ function CalltoAction() {
             {/* Connecting Lines */}
             <svg className="absolute inset-0 w-full h-full pointer-events-none">
               <defs>
-                <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <linearGradient
+                  id="lineGradient"
+                  x1="0%"
+                  y1="0%"
+                  x2="100%"
+                  y2="100%"
+                >
                   <stop offset="0%" stopColor="#f97316" stopOpacity="0.6">
-                    <animate attributeName="stop-opacity" values="0.2;0.8;0.2" dur="3s" repeatCount="indefinite" />
+                    <animate
+                      attributeName="stop-opacity"
+                      values="0.2;0.8;0.2"
+                      dur="3s"
+                      repeatCount="indefinite"
+                    />
                   </stop>
                   <stop offset="100%" stopColor="#ef4444" stopOpacity="0.3" />
                 </linearGradient>
               </defs>
-              
+
               {/* Animated Connection Lines */}
               <motion.path
                 initial={{ pathLength: 0 }}
@@ -207,7 +248,7 @@ function CalltoAction() {
                 fill="none"
                 strokeDasharray="5,5"
               />
-              
+
               <motion.path
                 initial={{ pathLength: 0 }}
                 whileInView={{ pathLength: 1 }}
@@ -224,15 +265,15 @@ function CalltoAction() {
             {[...Array(3)].map((_, i) => (
               <motion.div
                 key={i}
-                animate={{ 
+                animate={{
                   scale: [1, 2, 1],
-                  opacity: [0.5, 0, 0.5]
+                  opacity: [0.5, 0, 0.5],
                 }}
-                transition={{ 
+                transition={{
                   duration: 4,
                   repeat: Infinity,
                   delay: i * 1.3,
-                  ease: "easeOut"
+                  ease: "easeOut",
                 }}
                 className="absolute inset-0 rounded-full border border-orange-500/30"
               />
