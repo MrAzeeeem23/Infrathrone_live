@@ -1,8 +1,8 @@
-import { Poppins as PoppinsFont } from "next/font/google";
+import { Afacad as AfacadFont } from "next/font/google";
 import "./globals.css";
 
 
-const Poppins = PoppinsFont({
+const Afacad = AfacadFont({
   weight: ["400", "700"],
   style: ["normal", "italic"],
   subsets: ["latin"],
@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${Poppins.variable} antialiased`}
+        className={`${Afacad.className} antialiased`}
       >
         {children}
       </body>

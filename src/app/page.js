@@ -1,6 +1,7 @@
 import LetterGlitch from "@/components/backgrounds/LetterGlitch";
 import Footer from "@/components/footer/Footer";
 import NavBar from "@/components/Header/NavBar";
+import AboutMentor from "./AboutMentor";
 import AboutUs from "./AboutUs";
 import CalltoAction from "./CalltoAction";
 import Features from "./Features";
@@ -11,15 +12,15 @@ import WhyJoin from "./WhyJoin";
 export default function Home() {
   return (
     <div className="relative w-full min-h-screen overflow-hidden">
-      <div className="fixed inset-0 -z-30 opacity-30">
+      {/* <div className="fixed inset-0 -z-30 opacity-30">
         <LetterGlitch
-          glitchColors={["#823111", "#fa4902"]}
+          glitchColors={["#8B4513", "#fa4902"]}
           glitchSpeed={40}
           centerVignette={false}
           outerVignette={true}
           smooth={true}
         />
-      </div>
+      </div> */}
 
       <NavBar />
       <HeroSection />
@@ -27,6 +28,7 @@ export default function Home() {
       <Features />
       <WhyJoin />
       <ProgramDetails />
+      <AboutMentor />
       <CalltoAction />
       <Footer />
     </div>
