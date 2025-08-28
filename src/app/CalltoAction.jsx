@@ -107,7 +107,7 @@ function CalltoAction() {
               className="relative group inline-flex items-center justify-center px-10 py-5 text-lg font-bold text-white rounded-2xl overflow-hidden bg-gradient-to-r from-orange-500 via-red-500 to-orange-600 hover:from-orange-600 hover:via-red-600 hover:to-orange-700 transition-all duration-300 shadow-lg shadow-orange-500/25"
             >
               {/* Shimmer Effect */}
-              <div className="absolute inset-0 -top-40 -bottom-40 opacity-30 bg-gradient-to-r from-transparent via-white to-transparent skew-y-12 group-hover:animate-shimmer" />
+              <div className="absolute inset-0 -top-40 -bottom-40 opacity-30 bg-gradient-to-r from-transparent via-white to-transparent skew-y-12 group-hover:animate-shimmer pointer-events-none" />
               
               <Rocket className="w-6 h-6 mr-3 animate-bounce" />
               Register Now
